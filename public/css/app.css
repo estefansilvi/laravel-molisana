@@ -4,12 +4,13 @@
   padding: 0;
 }
 
-.big-container {
+.container-body {
+  width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -28,12 +29,9 @@ header .header-nav-item {
   display: inline-block;
   padding: 10px;
 }
-header .header-nav-item a {
+header .header-nav-item .nav-text {
   color: #050505;
   font-weight: bold;
-}
-header .header-nav-item:hover {
-  background: #b2e5fc;
 }
 
 .homepage-main {
@@ -41,45 +39,31 @@ header .header-nav-item:hover {
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
 }
-.homepage-main h2 {
+.homepage-main .main-title {
   color: #002d73;
+  margin: 15px 0;
 }
 .homepage-main .pasta-container {
   display: flex;
   flex-wrap: wrap;
 }
-.homepage-main .pasta-container .pasta-poster {
-  width: calc((100%/ 3) - 10px);
+.homepage-main .pasta-container .poster {
+  width: 32%;
   margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.products-main {
-  width: 100%;
-  background: #b7dae5;
-  text-align: center;
-  padding: 40px 0 30px 0;
-}
-.products-main h2 {
-  color: #002d73;
-}
-.products-main img {
-  width: calc(100% - 40px);
-}
-.products-main .product-description {
-  text-align: left;
-  color: #002d73;
-}
-
 footer .footer-container {
-  padding-top: 60px;
+  padding: 60px 80px 0 80px;
   display: flex;
+  justify-content: center;
 }
 footer .footer-container-box {
-  width: calc(100% / 3);
+  width: 32%;
   color: #89929f;
+  line-height: 22px;
 }
-footer .footer-container-box h2 {
+footer .footer-container-box .footer-title {
   margin-bottom: 20px;
 }
 footer .footer-container-box .link {
@@ -88,9 +72,9 @@ footer .footer-container-box .link {
 footer .footer-container-box .link a {
   color: #89929f;
 }
-footer .footer-img {
+footer .footer-image {
   width: 100%;
 }
-footer .footer-img img {
+footer .footer-image .image {
   width: 100%;
 }

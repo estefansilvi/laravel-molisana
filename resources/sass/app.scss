@@ -1,0 +1,97 @@
+@import 'color';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-body{
+  width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+    padding-top: 40px;
+
+    .header-nav{
+        margin-top: 30px;
+
+        &-item{
+            display: inline-block;
+            padding: 10px;
+
+            .nav-text{
+                color: $text-color-header;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.homepage-main{
+    padding: 40px 80px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+    .main-title{
+        color: $text-color-main;
+        margin: 15px 0;
+    }
+
+    .pasta-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .poster{
+            width: 32%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+footer{
+    .footer-container{
+
+        padding: 60px 80px 0 80px;
+        display: flex;
+        justify-content: center;
+
+        &-box{
+            width: 32%;
+            color: $text-color-footer;
+            line-height: 22px;
+
+            .footer-title{
+                margin-bottom: 20px;
+            }
+
+            .link{
+                margin-bottom: 10px;
+
+                a{
+                    color: $text-color-footer;
+                }
+            }
+
+        }
+    }
+
+    .footer-image{
+        width: 100%;
+
+        .image{
+            width: 100%;
+        }
+    }
+}

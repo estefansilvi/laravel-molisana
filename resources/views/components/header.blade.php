@@ -10,7 +10,7 @@
 
         <nav class="header-nav">
             @foreach ($nav as $navItem)
-                <div class="header-nav-item"><a href="#">{{$navItem}}</a></div>
+                <div class="header-nav-item"><a class="nav-text" href="#">{{$navItem}}</a></div>
             @endforeach
         </nav>
 

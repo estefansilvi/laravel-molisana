@@ -46,7 +46,7 @@
         </div>
 
         <div class="center footer-container-box">
-            <h2>PASTIFICIO</h2>
+            <h2 class="footer-title">PASTIFICIO</h2>
             @foreach ($pastificioLinks as $link)
                 <div class="link"><a href="#">{{$link}}</a></div>
             @endforeach
@@ -66,6 +66,6 @@
 
     </div>
 
-    <div class="footer-img"><img src="https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg" alt=""></div>
+    <div class="footer-image"><img class="image" src="https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg" alt=""></div>
 
 </footer>

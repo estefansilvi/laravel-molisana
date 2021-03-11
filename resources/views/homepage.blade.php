@@ -132,26 +132,26 @@ $pastaArray = json_decode($data, true);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Molisana</title>
 </head>
 <body>
 
-    <div class="">
+    <div class="container-body">
 
         @include('components.header')
 
-        <main class="">
+        <main class="homepage-main">
 
             <div class="container">
 
                 {{--  pasta lunga --}}
                 <section>
-                    <h2>LE LUNGHE</h2>
+                    <h2 class="main-title">LE LUNGHE</h2>
                     <div class="pasta-container">
                         @foreach ($pastaArray as $item)
                             @if ($item['tipo'] === 'lunga')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
+                                <img  src='{{$item['src']}}'' alt="" class="poster">
                             @endif
                         @endforeach
                     </div>
@@ -160,11 +160,11 @@ $pastaArray = json_decode($data, true);
 
                 {{-- pasta corta --}}
                 <section>
-                    <h2>LE CORTE</h2>
+                    <h2 class="main-title">LE CORTE</h2>
                     <div class="pasta-container">
                         @foreach ($pastaArray as $item)
                             @if ($item['tipo'] === 'corta')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
+                                <img src='{{$item['src']}}'' alt="" class="poster">
                             @endif
                         @endforeach
                     </div>
@@ -173,11 +173,11 @@ $pastaArray = json_decode($data, true);
 
                 {{--  pasta cortissima --}}
                 <section>
-                    <h2>LE CORTISSIME</h2>
+                    <h2 class="main-title">LE CORTISSIME</h2>
                     <div class="pasta-container">
                         @foreach ($pastaArray as $item)
                             @if ($item['tipo'] === 'cortissima')
-                                <img src='{{$item['src']}}'' alt="" class="pasta-poster">
+                                <img src='{{$item['src']}}'' alt="" class="poster">
                             @endif
                         @endforeach
                     </div>
