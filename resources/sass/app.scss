@@ -56,6 +56,10 @@ header{
             width: 32%;
             margin-right: 10px;
             margin-bottom: 10px;
+
+            img{
+                width: 100%;
+            }
         }
     }
 }
@@ -95,3 +99,5 @@ footer{
         }
     }
 }
+
+@import 'single-product';
